@@ -11,6 +11,10 @@ dependencies = [
     "litellm"
 ]
 
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
 [tool.setuptools.packages.find]
 where = ["src"]
 
@@ -32,6 +36,7 @@ source = "vcs"
 
 [dependency-groups]
 dev = [
+    "pytest>=8.4.1",
     "ruff<1.0.0,>=0.12.1",
 ]
 

@@ -31,3 +31,6 @@ jobs:
       # Skip type checking because of limitations in LiteLLM package
       # - name: Run type checking with pyright
       #   run: uv run pyright
+
+      - name: Run pytest
+        run: uv run pytest -v
