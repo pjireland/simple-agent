@@ -10,6 +10,7 @@ dependencies = [
     "faker",
     "litellm"
 ]
+license = "MIT"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
