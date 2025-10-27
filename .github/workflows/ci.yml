@@ -32,5 +32,6 @@ jobs:
       # - name: Run type checking with pyright
       #   run: uv run pyright
 
-      - name: Run pytest
-        run: uv run pytest -v
+      # No tests written yet for this simple program
+      # - name: Run pytest
+      #   run: uv run pytest -v
