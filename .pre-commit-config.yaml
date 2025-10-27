@@ -1,0 +1,18 @@
+# .pre-commit-config.yaml
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.14.2
+    hooks:
+      # Run ruff linting
+      - id: ruff
+        args: [--fix]
+
+      # Run ruff formatting
+      - id: ruff-format
+
+  # Skip type checking because of limitations in LiteLLM package
+  # - repo: https://github.com/RobertCraigie/pyright-python
+  #   rev: v1.1.407
+  #   hooks:
+  #     # Run type checking with pyright
+  #     - id: pyright
